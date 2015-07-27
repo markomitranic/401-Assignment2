@@ -1,0 +1,44 @@
+/*
+1. remove bullet points (list-style-type) 
+2. remove underline on links (text-decoration)
+3. reset the margin and padding of ul 
+4. create links to be block elements (display: block) and give them size
+
+*/
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/bodybg.jpg);
+	background-position: cover;
+	background-size: center center;
+	background-color: black;
+	font-size: 24px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#nav {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+#nav li {
+	display: inline-block;
+	padding: 0;
+}
+#nav a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    background-color: transparent;
+}
+#nav a:hover {
+	border-bottom: 3px solid white;
+    padding: 30px 30px 27px 30px;
+}
